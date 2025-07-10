@@ -30,6 +30,9 @@
   type="text/css"
   href="{{ site.third_party_libraries.google_fonts.url.fonts }}"
 >
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
 
 <!-- Code Syntax Highlighting -->
 <link
@@ -67,6 +70,7 @@
   <link rel="shortcut icon" href="{{ site.icon | prepend: '/assets/img/' | relative_url | bust_file_cache}}">
 {% endif %}
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url | bust_css_cache }}">
+<link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
 <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
 
 <!-- Dark Mode -->
